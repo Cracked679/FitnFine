@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cracked.ui_project.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/jumbotron"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/jumbotron4" />
+
+            <LinearLayout
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jumbotron"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="name"
+                    android:src="@drawable/ic_fitness_center_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="FitnFine Gym and Cardio Center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_name"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="address"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="@string/address"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_address"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="contact"
+                    android:src="@drawable/ic_contact_phone_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="@string/phone"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_phone"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="email"
+                    android:src="@drawable/ic_email_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:text="@string/email"
+                    android:textColorLink="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_email"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="website"
+                    android:src="@drawable/ic_web_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:text="@string/website"
+                    android:textColorLink="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_email"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="time"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="@string/time"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_time"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:contentDescription="time"
+                    android:src="@drawable/ic_info_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="@string/info"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_additionalinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_info"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:contentDescription="time"
+                    android:src="@drawable/ic_link_black_24dp"
+                    android:tint="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7sp"
+                    android:text="Additional Info"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="7sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:text="https://www.wikihow.com/Improve-Your-Fitness"
+                    android:textColorLink="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:text="https://www.wikihow.com/Improve-Your-Fitness"
+                    android:textColorLink="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
